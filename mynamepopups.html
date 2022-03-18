@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="element">
+        <input type="text" placeholder="enter name" id="iname">
+        <input type="number" placeholder="enter age" id="iage">
+        <button id="btn"> Submit</button>
+        <span id="result"></span>
+    </div>
+    <script>
+        var firstname = document.getElementById('iname')
+        var secondname = document.getElementById('iage')
+        var hello = document.getElementById('btn')
+        var spans = document.getElementById('result')
+
+        function findname(first, second) {
+            var finish ='I am '+ first+' and iam '+ second + ' years old'
+            return finish
+        }
+
+
+
+        function confirm() {
+            var first = firstname.value
+            var second = secondname.value
+            var finish = findname(first, second) 
+             alert(  finish)
+            
+        
+        }
+
+
+
+
+
+
+        hello.addEventListener('click', confirm)
+
+
+
+    </script>   
+</body>
+</html>
